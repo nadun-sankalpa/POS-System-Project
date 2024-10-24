@@ -326,9 +326,116 @@ table, th, td {
   padding: 1rem;
   text-align: left;
 }
+.btn{
+  padding: 10px 40px;
+  background-color: #47e627;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 30px;
+  color: rgb(0, 0, 0);
+  margin-right: -55%;
+}
+#removebtn{
+  padding: 10px 40px;
+  background-color: #ec1717;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 30px;
+  color: rgb(255, 255, 255);
+  
+}
+
+.popup{
+  width: 500px;
+  background-color: rgb(248, 224, 224);
+  border-radius: 6px;
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  transform: translate(-50%,-50%)scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: black;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%,-50%)scale(1);
+}
+
+.popup img{
+  width: 160px;
+  height: 160px;
+  margin-top: -70px;
+}
+
+.popup h2{
+  font-size: 25px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+
+.popup .inputBox{
+  position: relative;
+  width: 100%;
+  margin-bottom: 5px;
+  margin-left: 0;
+  text-align: left;
+}
+
+
+.popup .inputBox .span{
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 15px;
+  font-weight: 300;
+  transition: 0.5s;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+
+.popup .inputBox input{
+        
+  width: 98%;
+  border: 1px solid #d6d2d2;
+  padding: 10px;
+  color: #111;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  resize: none;
+  border-radius: 7px;
+  margin-top: 6px;
+}
+
+
+.popup button{
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background-color: #47e627;
+  color: black;
+  border: 0;
+  outline: none;
+  font-size: 12px;
+  border-radius: 8px;
+  box-shadow: 10px 10px 10x 10px black;
+}
 
 thead th {
-  position: sticky;
+  position: static;
   top: 0;
   left: 0;
   background-color: #d5d1defe;

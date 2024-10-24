@@ -178,6 +178,52 @@
                 <main class="table" id="customers_table">
                     <section class="table__header">
                         <h1>Item Details</h1>
+                        <button type="submit" class="btn" onclick="openPopup()">Add Item</button>
+                        <button type="submit" class="btn" id="removebtn" onclick="openPopup()">Remove Item</button>
+                        <div class="popup" id="popup">
+                            <img src="/POS-System-Project/assets/imgs/item.png" height="600px" width="600px" alt="">
+                            <h2>Add Item</h2>
+                            <form>
+                                <div class="inputBox">
+                                    <span> Model</span>
+                                    <input type="text" name="" required="required">
+                                    
+                                  </div>
+                        
+                                  <div class="inputBox">
+                                    <span>Version</span>
+                                    <input type="text" name="" required="required">
+                                   
+                                  </div>
+                        
+                                  
+                                  <div class="inputBox">
+                                    <span>Price</span>
+                                    <input type="text" name="" required="required">
+                                   
+                                  </div>
+
+                                  
+                                  <div class="inputBox">
+                                    <span>Location</span>
+                                    <input type="text" name="" required="required">
+                                   
+                                  </div>
+                                 
+                                <button type="button" onclick="closePopup()">Save</button>
+                            </form>
+                        </div>
+                    <script>
+                        let popup = document.getElementById("popup");
+
+                        function openPopup(){
+                            popup.classList.add("open-popup");
+                        }
+                        function closePopup(){
+                            popup.classList.remove("open-popup")
+                        }
+                    
+                    </script>
                         <div class="export__file">
                             <label for="export-file" class="export__file-btn" title="Export File"></label>
                             <input type="checkbox" id="export-file">
